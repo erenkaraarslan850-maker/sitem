@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eren | Kişisel Web Sitesi</title>
+  <link rel="icon" href="resimler/maskot.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <!-- GSAP 3 ve ScrollTrigger (jsDelivr CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- Sabit Üst Menü -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#kapak" class="nav-logo">EREN</a>
+      <nav class="nav-menu">
+        <a href="#kapak" class="nav-link">Kapak</a>
+        <a href="#hakkimda" class="nav-link">Hakkımda</a>
+        <a href="#ilgi-alanlarim" class="nav-link">İlgi Alanlarım</a>
+        <a href="#iletisim" class="nav-link">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Bölüm: Kapak -->
+    <section id="kapak" class="section section-kapak">
+      <div class="section-content kapak-content">
+        <div class="kapak-media">
+          <img src="resimler/linear.webp" alt="Modern ve sinematik arayüz tasarımını temsil eden Linear çalışma alanı görseli" class="cinematic-img kapak-img">
+        </div>
+        <div class="kapak-text">
+          <h1 class="main-title">Eren</h1>
+          <p class="tagline">Geleceğin dijital dünyasını sinematik ve yenilikçi deneyimlerle tasarlayan yazılım tutkunu.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Bölüm: Hakkımda -->
+    <section id="hakkimda" class="section section-hakkimda">
+      <div class="section-content hakkimda-content">
+        <div class="hakkimda-media">
+          <img src="resimler/maskot.png" alt="Eren'in dijital dünyasını simgeleyen 3D robot maskot" class="cinematic-img maskot-img">
+        </div>
+        <div class="hakkimda-text">
+          <h2 class="section-title">Hakkımda</h2>
+          <div class="bio-text" id="bio-container">
+            <p>Modern web teknolojileri ve kullanıcı deneyimi odaklı yazılım geliştirme alanında çalışmalarımı sürdürüyorum.</p>
+            <p>Karmaşık sistemleri sade, yüksek performanslı ve estetik arayüzlere dönüştürmekten büyük bir heyecan duyuyorum.</p>
+            <p>Sürekli öğrenerek yenilikçi dijital ürünler tasarlamayı ve geleceğin teknolojilerine değer katmayı amaçlıyorum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Bölüm: İlgi Alanlarım -->
+    <section id="ilgi-alanlarim" class="section section-ilgi">
+      <div class="section-content ilgi-content">
+        <h2 class="section-title">İlgi Alanlarım</h2>
+        <div class="cards-grid">
+          <!-- Kart 1: Kitap -->
+          <article class="card">
+            <div class="card-media">
+              <img src="resimler/kart-1.png" alt="Kitaplar, derin düşünce ve sürekli öğrenmeyi simgeleyen 3D sinematik kompozisyon" class="card-img">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Kitap</h3>
+              <p class="card-desc">Yeni perspektifler kazanmak ve zihnimi beslemek için düzenli okumayı yaşam biçimi kılıyorum.</p>
+            </div>
+          </article>
+
+          <!-- Kart 2: Spor -->
+          <article class="card">
+            <div class="card-media">
+              <img src="resimler/kart-2.png" alt="Spor, bedensel disiplin ve yüksek odaklanmayı temsil eden 3D sinematik görsel" class="card-img">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Spor</h3>
+              <p class="card-desc">Zinde bir beden ve odaklanmış bir zihin için sporu günlük rutinimin ayrılmaz parçası yapıyorum.</p>
+            </div>
+          </article>
+
+          <!-- Kart 3: Yemek -->
+          <article class="card">
+            <div class="card-media">
+              <img src="resimler/kart-3.png" alt="Gastronomi, mutfak sanatı ve lezzet arayışını yansıtan 3D sinematik görsel" class="card-img">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Yemek</h3>
+              <p class="card-desc">Farklı kültürlerin tatlarını keşfetmek ve mutfakta yaratıcı tarifler denemekten keyif alıyorum.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Bölüm: İletişim -->
+    <section id="iletisim" class="section section-iletisim">
+      <div class="section-content iletisim-content">
+        <h2 class="section-title">İletişim</h2>
+        <p class="contact-lead">Yeni projeler geliştirmek veya iletişim kurmak için aşağıdaki kanallardan bana ulaşabilirsiniz.</p>
+        <div class="contact-links" id="contact-links">
+          <a href="mailto:eren@example.com" class="contact-link">E-posta</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Alt Bilgi (Footer) -->
+  <footer class="footer">
+    <p class="ai-disclaimer">Bu sitedeki görseller yapay zekâ ile üretildi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
